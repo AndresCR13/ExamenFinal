@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestra.master.cs" Inherits="ExamenFinal.Capa_Presentacion.PaginaMaestra" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="../CSS/MenuPaginaMaestra.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>   
+           <ul class="menu">
+              <li><a class="active" href="Inicio.aspx" >INICIO</a></li>
+              <li><a href="Agente_Vista.aspx">Agentes</a></li>
+              <li><a href="Clientes_View.aspx">Clientes</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="slider"></li>
+          </ul>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <a href="MenuCircular1.aspx">MenuCircular1.aspx</a>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
